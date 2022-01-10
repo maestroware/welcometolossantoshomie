@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+* {
+    font-family: 'Licorice', cursive;
+}
+
+.ds {
+    float: left;
+}
+
+.dsi {
+    width: 200px;
+    border-radius: 100px;
+}
+
+#speed {
+    font-size: 23px;
+    margin: 15px;
+}
+
+.heading {
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+}
+
+.note {
+    font-size: 15px;
+    color: black;
+}
+
+body {
+    background-size: cover;
+}
+
+.dv {
+    float: right;
+}
+
+.dvi {
+    width: 200px;
+    border-radius: 100px;
+}
+
+#volume {
+    font-size: 23px;
+    margin: 15px;
+}
+
+#play {
+    font-size: 25px;
+    margin-top: 50px;
+    width:103px;
+}
+
+canvas{
+    border: 5px solid #fff;
+    border-radius: 20px;
+}
