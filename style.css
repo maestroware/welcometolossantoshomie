@@ -4,10 +4,6 @@
     font-family: 'Licorice', cursive;
 }
 
-.ds {
-    float: left;
-}
-
 .dsi {
     width: 200px;
     border-radius: 100px;
@@ -31,15 +27,6 @@
 
 body {
     background-size: cover;
-}
-
-.dv {
-    float: right;
-}
-
-.dvi {
-    width: 200px;
-    border-radius: 100px;
 }
 
 #volume {
