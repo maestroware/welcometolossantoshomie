@@ -25,12 +25,21 @@ function draw() {
     image(video, 0, 0, 600, 500)
     fill("#8c6117")
     stroke("#8c6117")
-    nostat = songa.isPlaying()
-    homiestat = song.isPlaying()
+    homiestat = homie.isPlaying()
+    nostat = no.isPlaying()
+    // console.log(homiestat, nostat)
+    if(rws > 0.2){
+        circle(rwx, rwy, 20)
+        no.stop()
+        if(homiestat == false){
+            homie.play()
+            document.getElementById("song").innerHTML = "Welcome to Los Santos By the Alchemist and Oh No!"
+        }
+    }
     if(lws > 0.2){
         circle(lwx, lwy, 20)
         homie.stop()
-        if(nostat = false){
+        if(nostat == false){
             no.play()
             document.getElementById("song").innerHTML = "Welcome to Los Santos - Non-lyrical"
         }
@@ -53,6 +62,8 @@ function gp(results) {
         rwy = results[0].pose.rightWrist.y
         console.log(rwx +" rwy:" + rwy)
         lws = results[0].pose.keypoints[9].score
+        rws = results[0].pose.keypoints[10].score
+        // console.error(lws, rws)
     }
 }
 
